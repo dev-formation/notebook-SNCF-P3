@@ -6,8 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  plugins: [require.resolve('docusaurus-lunr-search')],
+  title: 'UpToDev - Promo Simplon x SNCF',
+  tagline: 'NoteBook 2023-2024',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -28,8 +29,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
   },
 
   presets: [
@@ -64,9 +65,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Notebook UpToDev P3',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Logo Sncf x Simplon',
           src: 'img/logo.svg',
         },
         items: [
@@ -74,12 +75,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Supports formation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Ressources', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/orgs/dev-formation/teams/up2dev_sncf_23-24/repositories',
+            label: 'GitHub promo',
             position: 'right',
           },
         ],
@@ -127,7 +128,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} dev-formation, construit avec Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

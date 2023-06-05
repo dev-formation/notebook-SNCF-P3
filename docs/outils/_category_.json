@@ -1,0 +1,8 @@
+{
+  "label": "Outils",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Les fondamentaux du web static et dynamique coté front-end"
+  }
+}
