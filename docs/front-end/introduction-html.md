@@ -84,7 +84,7 @@ Même si visuellement on obtient pour l'instant le même résultat, la structure
 → Plusieurs attributs peuvent être mis sur une balise
 
 ```html
-<span class="”nom-classe”"> Hello World ! </span>
+<span class="nom-classe”"> Hello World ! </span>
 ```
 
 Ici, on a donc un élément HTML composé :
@@ -108,7 +108,7 @@ Ici, on a donc un élément HTML composé :
 ### Quelques exemples
 
 ```html
-<img src="”logo.png”" width="”200”" height="”200”" alt="”logo" Simplon” />
+<img src="logo.png”" width="200”" height="200”" alt="logo" Simplon” />
 ```
 
 Ici les attributs de notre balise `img` sont :
@@ -127,7 +127,7 @@ Ici l'attribut de notre balise `a` est :
 - `href` : servant à définir la ressource vers laquelle l'utilisateur sera redirigé lors du clic sur lien
 
 ```html
-<span id="”mon-id”"> Du texte en ligne </span>
+<span id="mon-id"> Du texte en ligne </span>
 ```
 
 Ici l'attribut de notre balise `span` est :
@@ -137,7 +137,7 @@ Ici l'attribut de notre balise `span` est :
 ⚠️ Cet identifiant est **unique →** 2 balises ne doivent pas avoir le même `id`
 
 ```html
-<p class="”ma-class”">Mon petit paragraphe</p>
+<p class="ma-class">Mon petit paragraphe</p>
 ```
 
 Ici l'attribut de notre balise `p` est :
@@ -224,7 +224,7 @@ Ce commentaire n'apparaitra donc pas dans votre page, mais il sera visible par v
 
 ## Structurer son contenu et lui donner du sens
 
-## Balise div
+### Balise div
 
 - Permet de former des blocs dans votre page
 - C’est un conteneur qui peut inclure d’autres balises
@@ -344,7 +344,7 @@ racine du site. Par convention le fichier “racine” est appelé index.html
 
 S’il existe il est affiché en priorité sinon tu peux tomber sur cette visualisation :
 
-![Capture d’écran 2021-09-08 à 19.48.14.png](./img/Capture_decran_2021-09-08_a_19.48.14.png)
+![Capture d’écran 2021-09-08 à 19.48.14.png](./assets/img/Capture_decran_2021-09-08_a_19.48.14.png)
 
 Voici un exemple d'arborescence "classique" d'un site web :
 
@@ -354,7 +354,7 @@ Voici un exemple d'arborescence "classique" d'un site web :
 
 🕹Télécharger le dossier ci-dessous et compléter les liens entre chaque pages
 
-[Exercice-liens-hypertext.zip](Cours%20Initiation%20HTML%20f914ea34331c4c16b65204371c02a480/Exercice-liens-hypertext.zip)
+[Exercice-liens-hypertext.zip](./assets/Exercice-liens-hypertext.zip)
 
 ```html
 |Dossier Site (racine) |index.html |-pages | |- page1.html | |-sous-pages | |-

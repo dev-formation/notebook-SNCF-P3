@@ -70,7 +70,7 @@ HTTP est basé sur un modèle de réponse à une demande dont nous avons discut�
 
 ![Entête de requête réponse](./img/architecture-web/entete-requete-reponse.png)
 
-HTTP Request comporte quelques parties, qui incluent la ligne de départ ( Méthode HTTP + cible de demande + Version HTTP ), en-tête de requête HTTP et corps de demande.
+Les requêtes HTTP comporte différentes parties, qui incluent la ligne de départ ( Méthode HTTP + cible de demande + Version HTTP ), en-tête de requête HTTP et corps de demande.
 
 Les méthodes HTTP les plus courantes sont GET, qui demande une ressource au serveur, et POST, qui envoie des données au serveur à traiter. Il existe également des méthodes PUT et Patch qui sont utilisées pour modifier les données.
 

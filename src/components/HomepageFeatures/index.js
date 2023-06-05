@@ -16,12 +16,17 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Le mindset des dev ?',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        1. Apprendre tout au long de sa carrière <br />
+        2. Les problématiques sont positives : problématique = possibilité
+        d'apprendre <br />
+        3. Savoir chercher : vérifier ses sources, dates, suivre les docs
+        officielles <br />
+        4. Collaborer en groupe <br />
+        5. Chercher à améliorer la qualité et la sécurité du code produit
       </>
     ),
   },
@@ -30,8 +35,9 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        La formation est là pour vous accompagner dans votre démarche de
+        reconversion de la manière la plus professionnelle et épanouissante
+        possible
       </>
     ),
   },

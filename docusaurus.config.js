@@ -12,15 +12,17 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://dev-formation.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/notebook-SNCF-P3',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'dev-formation', // Usually your GitHub org/user name.
+  projectName: 'notebook-SNCF-P3', // Usually your repo name.
+  trailingSlash: false,
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -77,7 +79,7 @@ const config = {
             position: 'left',
             label: 'Supports formation',
           },
-          { to: '/blog', label: 'Ressources', position: 'left' },
+          // { to: '/blog', label: 'Ressources', position: 'left' },
           {
             href: 'https://github.com/orgs/dev-formation/teams/up2dev_sncf_23-24/repositories',
             label: 'GitHub promo',
@@ -92,8 +94,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Lexique',
+                to: '/docs/lexique',
               },
             ],
           },
@@ -108,22 +110,14 @@ const config = {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/dev-formation/notebook-SNCF-P3',
               },
             ],
           },
