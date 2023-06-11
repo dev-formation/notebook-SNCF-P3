@@ -22,7 +22,6 @@ const config = {
   organizationName: 'dev-formation', // Usually your GitHub org/user name.
   projectName: 'notebook-SNCF-P3', // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

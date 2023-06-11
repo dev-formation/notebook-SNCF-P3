@@ -84,7 +84,7 @@ Même si visuellement on obtient pour l'instant le même résultat, la structure
 → Plusieurs attributs peuvent être mis sur une balise
 
 ```html
-<span class="nom-classe”"> Hello World ! </span>
+<span class="nom-classe"> Hello World ! </span>
 ```
 
 Ici, on a donc un élément HTML composé :
@@ -108,7 +108,7 @@ Ici, on a donc un élément HTML composé :
 ### Quelques exemples
 
 ```html
-<img src="logo.png”" width="200”" height="200”" alt="logo" Simplon” />
+<img src="logo.png" width="200" height="200" alt="logo Simplon" />
 ```
 
 Ici les attributs de notre balise `img` sont :
@@ -119,7 +119,7 @@ Ici les attributs de notre balise `img` sont :
 - `alt` : servant à afficher un texte alternatif descriptif si l'image n'a pas pu être chargée, les informations de cet attribut servent aussi au malvoyant
 
 ```html
-<a href=”https://monsite.com”>Mon lien vers ma ressources</a>
+<a href="https://monsite.com">Mon lien vers ma ressources</a>
 ```
 
 Ici l'attribut de notre balise `a` est :
@@ -327,7 +327,7 @@ Renvoie vers :
 ### Comment ? (page externe)
 
 ```html
-<a href=”http://www.google.fr” title="aller sur ggl">Lien vers GGL</a>
+<a href="http://www.google.fr" title="aller sur ggl">Lien vers GGL</a>
 ```
 
 Dans cet exemple tu as :
