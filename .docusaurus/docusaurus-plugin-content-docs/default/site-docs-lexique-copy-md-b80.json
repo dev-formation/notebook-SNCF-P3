@@ -1,0 +1,27 @@
+{
+  "unversionedId": "lexique copy",
+  "id": "lexique copy",
+  "title": "Lexique",
+  "description": "",
+  "source": "@site/docs/lexique copy.md",
+  "sourceDirName": ".",
+  "slug": "/lexique copy",
+  "permalink": "/docs/lexique copy",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/lexique copy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction HTML",
+    "permalink": "/docs/front-end/introduction-html"
+  },
+  "next": {
+    "title": "Lexique",
+    "permalink": "/docs/lexique"
+  }
+}

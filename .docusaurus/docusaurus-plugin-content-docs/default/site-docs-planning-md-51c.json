@@ -1,0 +1,27 @@
+{
+  "unversionedId": "planning",
+  "id": "planning",
+  "title": "Planning",
+  "description": "Planning de foramtion",
+  "source": "@site/docs/planning.md",
+  "sourceDirName": ".",
+  "slug": "/planning",
+  "permalink": "/notebook-SNCF-P3/docs/planning",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction CSS",
+    "permalink": "/notebook-SNCF-P3/docs/front-end/introduction-css"
+  },
+  "next": {
+    "title": "Lexique",
+    "permalink": "/notebook-SNCF-P3/docs/lexique"
+  }
+}

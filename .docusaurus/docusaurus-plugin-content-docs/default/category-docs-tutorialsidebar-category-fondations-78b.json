@@ -1,0 +1,12 @@
+{
+  "title": "Fondations",
+  "description": "Comprendre comment fonctionne le web",
+  "slug": "/category/fondations",
+  "permalink": "/docs/category/fondations",
+  "navigation": {
+    "next": {
+      "title": "Architecture du Web",
+      "permalink": "/docs/fondations/architecture-web"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Fondations",
+  "description": "Comprendre comment fonctionne le web",
+  "slug": "/category/fondations",
+  "permalink": "/notebook-SNCF-P3/docs/category/fondations",
+  "navigation": {
+    "next": {
+      "title": "Architecture du Web",
+      "permalink": "/notebook-SNCF-P3/docs/fondations/architecture-web"
+    }
+  }
+}

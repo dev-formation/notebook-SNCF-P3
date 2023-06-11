@@ -1,0 +1,28 @@
+{
+  "unversionedId": "foundations/architecture-web",
+  "id": "foundations/architecture-web",
+  "title": "Architecture du Web",
+  "description": "Il est facile de tenir les subtilités du Web pour acquises alors que nous parcourons quotidiennement divers sites Web. Nous entrons une URL dans notre navigateur, et en quelques secondes, tout un site Web apparaît. Mais avez-vous déjà cessé de vous interroger sur la technologie et les processus qui rendent cela possible? Cet article explore les divers composants et technologies qui font de l'expérience apparemment sans effort d'accès au Web une réalité.",
+  "source": "@site/docs/foundations/architecture-web.md",
+  "sourceDirName": "foundations",
+  "slug": "/foundations/architecture-web",
+  "permalink": "/docs/foundations/architecture-web",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/foundations/architecture-web.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Architecture du Web"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Fondations",
+    "permalink": "/docs/category/fondations"
+  },
+  "next": {
+    "title": "Front-end",
+    "permalink": "/docs/category/front-end"
+  }
+}

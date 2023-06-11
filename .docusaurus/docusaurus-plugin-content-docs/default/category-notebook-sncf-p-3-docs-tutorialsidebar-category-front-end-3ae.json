@@ -1,0 +1,16 @@
+{
+  "title": "Front-end",
+  "description": "Les fondamentaux du web static et dynamique coté front-end",
+  "slug": "/category/front-end",
+  "permalink": "/notebook-SNCF-P3/docs/category/front-end",
+  "navigation": {
+    "previous": {
+      "title": "Architecture du Web",
+      "permalink": "/notebook-SNCF-P3/docs/fondations/architecture-web"
+    },
+    "next": {
+      "title": "Introduction HTML",
+      "permalink": "/notebook-SNCF-P3/docs/front-end/introduction-html"
+    }
+  }
+}

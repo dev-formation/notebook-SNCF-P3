@@ -1,0 +1,23 @@
+{
+  "unversionedId": "lexique",
+  "id": "lexique",
+  "title": "Lexique",
+  "description": "",
+  "source": "@site/docs/lexique.md",
+  "sourceDirName": ".",
+  "slug": "/lexique",
+  "permalink": "/notebook-SNCF-P3/docs/lexique",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/lexique.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Planning",
+    "permalink": "/notebook-SNCF-P3/docs/planning"
+  }
+}
