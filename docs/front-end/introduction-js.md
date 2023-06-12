@@ -69,8 +69,6 @@ sur plusieurs lignes
 */
 ```
 
-###
-
 ### Comment afficher un message à l'écran ?
 
 Lorsque tu vas commencer à faire des tests et à développer tes premiers programmes, tu vas avoir besoin de connaitre le contenu de tes variables au cours son exécution. Pour cela tu peux utiliser la méthode `log` disponible sur l'objet `console`. Ce sera ton ami pendant un bon moment au cours de ton apprentissage du JS alors utilise le dès que tu en as besoin.
@@ -131,7 +129,7 @@ Lorsque tu choisis un nom pour ta variable, il faut que tu essayes au maximum de
 Le nom de ta variable peut contenir des lettres, des chiffres ou des caractères spéciaux, mais ne **peut pas contenir d'espace** et **ne peut pas commencer par un chiffre**
 :::
 
-### Déclation de variable
+### Déclaration de variable
 
 Avant de pouvoir utiliser une variable pour y stocker quelque chose, tu dois d'abord faire naitre ta variable : on appelle cela **déclarer une variable.** (et comme une naissance, ça ne peut être fait qu'une fois par variable)
 
