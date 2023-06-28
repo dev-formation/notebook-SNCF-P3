@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Les nodes modules
+# Les node modules
 
 ## Qu'est-ce qu'un module ?
 
