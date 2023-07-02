@@ -222,7 +222,7 @@ import { CartComponent } from './cart/cart.component';
 </a>
 ```
 
-5. Vérifiez que le nouveau `CartComponent` fonctionne comme prévu en cliquant sur le bouton **Paiement** . Vous pouvez voir le texte par défaut "cart works!", et l'URL a le modèle `http://localhost:4200/cart`.
+5. Vérifiez que le nouveau `CartComponent` fonctionne comme prévu en cliquant sur le bouton **Paiement** . Vous pouvez voir le texte par défaut "cart works!", et l'URL a le modèle (http://localhost:4200/cart)[http://localhost:4200/cart].
 
 <div class="container-img-50">
   <img
@@ -301,15 +301,15 @@ L'application que vous construsez pour ce tuto est livrée avec des données d'e
 ```json title=src/assets/shipping.json
 [
   {
-    "type": "Overnight",
+    "type": "De nuit",
     "price": 25.99
   },
   {
-    "type": "2-Day",
+    "type": "Livraison 2 jours",
     "price": 9.99
   },
   {
-    "type": "Postal",
+    "type": "Voie postale",
     "price": 2.99
   }
 ]
@@ -396,55 +396,43 @@ export class CartService {
 
 ---
 
-<!-- TODO -->
+## Créer un composant d'expédition
 
-Pour plus d'informations sur HttpClient d' Angular , consultez le guide d' interaction client-serveur .
+Maintenant que vous avez configuré votre application pour récupérer les données d'expédition,vous pouvez créer un endroit pour afficher ces données.
 
-<!--
-  <div class="container-img-50">
-    <img
-      src={require('./assets/list-products-with-share.png').default}
-      alt="Les boutons Partager sont ajoutés à la liste"
-    />
-    <figcaption>Les boutons Partager sont ajoutés à la liste</figcaption>
-  </div>
+1. Générez un composant de panier nommé shipping dans le terminal en exécutant la commande suivante :
 
-Create a shipping component
-Now that you've configured your application to retrieve shipping data, you can create a place to render that data.
-
-Generate a cart component named shipping in the terminal by running the following command:
-
-content_copy
+```bash title=Terminal
 ng generate component shipping
-This command will generate the shipping.component.ts file and it associated template and styles files.
+```
 
-src/app/shipping/shipping.component.ts
-content_copy
-import { Component } from '@angular/core';
+Cette commande générera le fichier `shipping.component.ts` et les fichiers de modèles et de styles associés.
+
+```ts title=src/app/shipping/shipping.component.ts
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-shipping',
-  templateUrl: './shipping.component.html',
-  styleUrls: ['./shipping.component.css']
+  selector: "app-shipping",
+  templateUrl: "./shipping.component.html",
+  styleUrls: ["./shipping.component.css"],
 })
-export class ShippingComponent {
+export class ShippingComponent {}
+```
 
-}
-In app.module.ts, add a route for shipping. Specify a path of shipping and a component of ShippingComponent.
+2. Dans `app.module.ts`, ajoutez une route pour l'expédition. Spécifiez un path `shipping` et un composant de `ShippingComponent`.
 
-src/app/app.module.ts
-content_copy
+```ts title=src/app/app.module.ts
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
-    ])
+      { path: "", component: ProductListComponent },
+      { path: "products/:productId", component: ProductDetailsComponent },
+      { path: "cart", component: CartComponent },
+      { path: "shipping", component: ShippingComponent },
+    ]),
   ],
   declarations: [
     AppComponent,
@@ -453,76 +441,104 @@ content_copy
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-There's no link to the new shipping component yet, but you can see its template in the preview pane by entering the URL its route specifies. The URL has the pattern: https://angular-ynqttp--4200.local.webcontainer.io/shipping where the angular-ynqttp--4200.local.webcontainer.io part may be different for your StackBlitz project.
+export class AppModule {}
+```
 
-Configuring the ShippingComponent to use CartService
-This section guides you through modifying the ShippingComponent to retrieve shipping data via HTTP from the shipping.json file.
+Il n'y a pas encore de lien vers le nouveau composant d'expédition, mais vous pouvez visionner ce composanten entrant l'URL spécifiée par sa route. L'URL d'affichage de ce composant est : [http://localhost:4200/shipping](http://localhost:4200/shipping).
 
-In shipping.component.ts, import CartService.
+### Configuration du CartService ShippingComponent pour utiliser CartService
 
-src/app/shipping/shipping.component.ts
-content_copy
-import { Component, OnInit } from '@angular/core';
+Cette section vous guide dans la modification de ShippingComponent pour récupérer les données d'expédition via HTTP à partir du fichier `shipping.json`.
 
-import { Observable } from 'rxjs';
-import { CartService } from '../cart.service';
-Inject the cart service in the ShippingComponent constructor().
+1. Dans `shipping.component.ts`, importez `CartService`.
 
-src/app/shipping/shipping.component.ts
-content_copy
-constructor(private cartService: CartService) { }
-Define a shippingCosts property that sets the shippingCosts property using the getShippingPrices() method from the CartService. Initialize the shippingCosts property inside ngOnInit() method.
+```ts title=src/app/shipping/shipping.component.ts
+import { Component, OnInit } from "@angular/core";
 
-src/app/shipping/shipping.component.ts
-content_copy
+import { Observable } from "rxjs";
+import { CartService } from "../cart.service";
+```
+
+2. Injectez le service cart dans le constructor() ShippingComponent () .
+
+```ts title=src/app/shipping/shipping.component.ts
+/* . . . */
+  constructor(private cartService: CartService) { }
+/* . . . */
+```
+
+3. Définissez une propriété `shippingCosts` dont la valeur sera initialisée à l'aide de la méthode `getShippingPrices()` de `CartService`. Initialisez la propriété `shippingCosts` dans la méthode `ngOnInit()`.
+
+```ts title=src/app/shipping/shipping.component.ts
 export class ShippingComponent implements OnInit {
+  shippingCosts!: Observable<{ type: string; price: number }[]>;
 
-  shippingCosts!: Observable<{ type: string, price: number }[]>;
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    this.shippingCosts =  this.cartService.getShippingPrices();
+    this.shippingCosts = this.cartService.getShippingPrices();
   }
-
 }
+```
 
-Update the ShippingComponent template to display the shipping types and prices using the async pipe.
+4. Mettez à jour le modèle `ShippingComponent` pour afficher les types d'expédition et les prix à l'aide d'une pipe `async`.
 
-src/app/shipping/shipping.component.html
-content_copy
-<h3>Shipping Prices</h3>
+```html title=src/app/shipping/shipping.component.html
+<h3>Prix d'expédition</h3>
 
 <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
   <span>{{ shipping.type }}</span>
   <span>{{ shipping.price | currency }}</span>
 </div>
-The async pipe returns the latest value from a stream of data and continues to do so for the life of a given component. When Angular destroys that component, the async pipe automatically stops. For detailed information about the async pipe, see the AsyncPipe API documentation.
+```
 
-Add a link from the CartComponent view to the ShippingComponent view.
+La pipe async renvoie la dernière valeur d'un flux de données et continue de le faire pendant toute la durée de vie d'un composant donné. Lorsque Angular détruit ce composant, la canal `async` s'arrête automatiquement.
 
-src/app/cart/cart.component.html
-content_copy
-<h3>Cart</h3>
+5. Ajoutez un lien de la vue `ShippingComponent` dans la page `CartComponent` .
+
+```html title=src/app/cart/cart.component.hmtl
+<h3>Panier</h3>
 
 <p>
-  <a routerLink="/shipping">Shipping Prices</a>
+  <a routerLink="/shipping">Prix d'expédition</a>
 </p>
 
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
-Click the Checkout button to see the updated cart. Remember that changing the application causes the preview to refresh, which empties the cart.
+```
 
-Cart with link to shipping prices
-Click on the link to navigate to the shipping prices.
+6. Cliquez sur le bouton **Paiement** pour voir le panier mis à jour. N'oubliez pas que changer l'application provoque l'actualisation de l'aperçu, ce qui vide le panier.
 
-Display shipping prices
-What's next
--->
+<div class="container-img-50">
+  <img
+    src={require('./assets/cart-shipping-link-added.png').default}
+    alt="Ajout du lien de la page Prix d'Expédition"
+  />
+  <figcaption>Ajout du lien de la page Prix d'Expédition</figcaption>
+</div>
+
+7. Cliquez sur le lien pour accéder aux prix d'expédition.
+
+<div class="container-img-50">
+  <img
+    src={require('./assets/shipping-price.png').default}
+    alt="Liste des Prix d'expédition"
+  />
+  <figcaption>Liste des Prix d'expédition</figcaption>
+</div>
+
+---
+
+## C'est quoi la suite ?
+
+Vous disposez maintenant d'une application de magasin avec un catalogue de produits,un panier d'achat et vous pouvez consulter les prix d'expédition.
+
+Pour continuer à explorer Angular :
+
+Continuez vers Formulaires pour la saisie de l'utilisateur pour terminer l'application en ajoutant la vue du panier et un formulaire de paiement.
