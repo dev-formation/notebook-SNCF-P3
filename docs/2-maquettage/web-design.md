@@ -29,13 +29,13 @@ Une application adaptative est une application qui affiche des informations diff
 
 Parfois, vous ferez une application que pour un seul écran, un ordinateur par exemple. Cette situation est de plus en plus rare dans la vie d'un développeur.
 
-Prenez connaissance du [Responsive Web Design](https://fr.wikipedia.org/wiki/Site_web_r%C3%A9actif) et du Mobile First design et de l'Adaptive Design avant de vous lancez dans le design.
+Prenez connaissance du [Responsive Web Design](https://fr.wikipedia.org/wiki/Site_web_r%C3%A9actif) et du Mobile First design et de l'[Adaptive Design](https://www.usabilis.com/responsive-web-design-site-web-adaptatif/) avant de vous lancez dans le design.
 
 Quand nous dessinons les zoning, le dessin doit être rapide et peu précis. Il est inutile d'utiliser un logiciel compliqué. Le zoning ci-dessous est réalisé sous LibreOffice Draw.
 
 ![un zoning](./assets/zoning.png)
 
-Vous avez dû remarquer les colonnes vertes en arrière plan. En fait, je sais que développerai un site web responsive que que j'utiliserai le framework Bootstrap. J'ai donc dessiné les 12 colonnes avec les gouttières, comme cela je vais gagner un peu de temps lors du développement. Vous pouvez télécharger ce zoning pour bootstrap.
+Vous avez dû remarquer les colonnes vertes en arrière plan. En fait, je sais que développerai un site web responsive que que j'utiliserai le framework Bootstrap. J'ai donc dessiné les 12 colonnes avec les gouttières, comme cela je vais gagner un peu de temps lors du développement. Vous pouvez télécharger ce [zoning](./assets/zoning-a.odg) pour bootstrap.
 
 ## Le wireframe
 
@@ -68,19 +68,23 @@ le prototype n'est pas destiné au développeur, et donc nous ne développerons 
 
 ### Le design system
 
-Pour uniformiser le visuel de l'application, durant de nombreuses années, nous avons utiliser la charte graphique qui est très rigide. Aujourd'hui, avec les outils modernes de conception et l'Agility, nous parlons de Design System. Ce concept a été développé par un Web Designer Prad Frost. Ce concept est utilisé dans les outils modernes comme Figma.
+Pour uniformiser le visuel de l'application, durant de nombreuses années, nous avons utiliser la charte graphique qui est très rigide. Aujourd'hui, avec les outils modernes de conception et l'Agility, nous parlons de Design System. Ce concept a été développé par un Web Designer Brad Frost. Ce concept est utilisé dans les outils modernes comme Figma.
 
 ![Sketchnote d'Audrey Hacq](./assets/design-system.jpeg)
 
 Sketchnote tiré du [billet Medium](https://audreyhacq.medium.com/tout-savoir-sur-les-syst%C3%A8mes-de-design-1b6400c9a1b3) d'Audrey Hacq.
 
-Je vous conseille la lecture de cet article pour bien comprendre ce concept. Et voici la version écrite par l'auteur Atomic Design by Brad Frost.
+Je vous conseille la lecture de ce bouquin, [Atomic Design par Brad Frost](https://atomicdesign.bradfrost.com/table-of-contents/) pour bien comprendre ce concept.
 
 ### Quelques notions UI
 
 Le design UI est un métier à part entière qui demande une formation plus longue que la lecture de quelques articles.
-Dans ce chapitre, nous n'abordons que quelques notions qui nous permettent de dessiner une interface qui n'aura pas le look d'une application des années 2000. Voici quelques articles :
+Dans ce chapitre, nous n'abordons que quelques notions qui nous permettent de dessiner une interface qui n'aura pas le look d'une application des années 2000.
+
+Voici quelques articles :
 
 - Skeuomorphisme, Flat design, Material Design. Ces termes ne signifient rien pour vous, lisez ces [4 premiers chapitres du cours sur OpenClassroom](https://openclassrooms.com/fr/courses/3936801-composez-des-interfaces-utilisateurs-en-material-design/3936808-comprenez-la-notion-dinterface-utilisateur).
 - Tout comprendre de l’[ui design](https://www.mailabs.fr/tout-comprendre-de-lui-design/)
 - Les [tendance UI](./assets/tendance_UI_2021.pdf) de l'année 2021
+
+Copyright [Le Dev Design Book de Tiankod](https://www.devdesignbook.tiankod.fr/)
