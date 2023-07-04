@@ -81,6 +81,6 @@ Je vous conseille la lecture de cet article pour bien comprendre ce concept. Et 
 Le design UI est un métier à part entière qui demande une formation plus longue que la lecture de quelques articles.
 Dans ce chapitre, nous n'abordons que quelques notions qui nous permettent de dessiner une interface qui n'aura pas le look d'une application des années 2000. Voici quelques articles :
 
-- Skeuomorphisme, Flat design, Material Design. Ces termes ne signifient rien pour vous, lisez ces 4 premiers chapitres du cours sur OpenClassroom.
-- Tout comprendre de l’ui design
-- Une tendance UI de l'année 2021
+- Skeuomorphisme, Flat design, Material Design. Ces termes ne signifient rien pour vous, lisez ces [4 premiers chapitres du cours sur OpenClassroom](https://openclassrooms.com/fr/courses/3936801-composez-des-interfaces-utilisateurs-en-material-design/3936808-comprenez-la-notion-dinterface-utilisateur).
+- Tout comprendre de l’[ui design](https://www.mailabs.fr/tout-comprendre-de-lui-design/)
+- Les [tendance UI](./assets/tendance_UI_2021.pdf) de l'année 2021
