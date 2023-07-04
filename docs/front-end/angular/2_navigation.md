@@ -152,6 +152,8 @@ modèle HTML. Lorsque les utilisateurs cliquent sur un nom dans la liste desprod
   <figcaption>Détails du produit de la page http://localhost:4200/products/1</figcaption>
 </div>
 
+---
+
 ## C'est quoi la suite ?
 
 Vous avez configuré votre application de manière à pouvoir afficher les détails des produits, chacun ayant une URL distincte et ceci de manière complètement dynamique : ici nous avons 3 produits mais cela fonctionne si nous en avions 1 000 .
