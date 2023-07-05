@@ -41,9 +41,9 @@ L'aperçu se met à jour pour afficher le nom de chaque produit de la liste.
   <figcaption>Les produits sont ajoutés à la liste</figcaption>
 </div>
 
-1. Pour faire de chaque nom de produit un lien vers les détails du produit, ajoutez l'élément `<a>` autour de `{{ product.name }}`.
+4. Pour faire de chaque nom de produit un lien vers les détails du produit, ajoutez l'élément `<a>` autour de `{{ product.name }}`.
 
-2. Définissez le titre sur le nom du produit en utilisant la syntaxe de liaison de propriété `[ ]`, comme suit :
+5. Définissez le titre sur le nom du produit en utilisant la syntaxe de liaison de propriété `[ ]`, comme suit :
 
 ```html title="src/app/product-list/product-list.component.html"
 <h2>Liste de produits</h2>
