@@ -185,20 +185,23 @@ export class ProductAlertsComponent {
 </p>
 ```
 
-1. Le générateur de code a automatiquement ajouté `ProductAlertsComponent` à la liste des déclarations dans AppModule. Vous n'avez pas besoin de modifier AppModule pour utiliser le nouveau composant.
+7. Le générateur de code a automatiquement ajouté `ProductAlertsComponent` à la liste des déclarations dans AppModule. Vous n'avez pas besoin de modifier AppModule pour utiliser le nouveau composant.
 
 ```ts title="src/app/app.module.ts"
 import { ProductAlertsComponent } from "./product-alerts/product-alerts.component";
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([{ path: "", component: ProductListComponent }]),
+  ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent, // <-- Ajouté automatiquement
   ],
-  imports: [BrowserModule, ReactiveFormsModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
