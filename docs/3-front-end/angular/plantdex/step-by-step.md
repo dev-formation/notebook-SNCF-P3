@@ -406,7 +406,7 @@ On va afficher les plantes dans le template `PageHomeComponent`.
 On pense à faire notre commit ! avec le message : `4 - affichage plant + service`
 :::
 
-## Partie 5 : Plant card et communication entre composants
+<!-- ## Partie 5 : Plant card et communication entre composants
 
 <div class="container-img-100">
   <img
@@ -443,4 +443,4 @@ On pense à faire notre commit ! avec le message : `6 - filtre par categorie + i
 
 :::info
 On pense à faire notre commit ! avec le message : `7 - barre de recherche + tri`
-:::
+::: -->
